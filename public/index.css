@@ -29,9 +29,16 @@ a:visited {
 	opacity: 0.3;
 }
 
-div {
-	height: 100vh;
-	padding-top: 100px;
+.max {
+	position: absolute;
+	display: table;
+	width: 90%;
+	height: 100%;
+	margin-top: -3rem;
+	margin-left: 5%;
+	overflow: hidden;
+	z-index: 10;
+
 }
 
 #about {
@@ -49,4 +56,16 @@ div {
 	float:left;
 	margin-left: 20px;
 	margin-right: 50px;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+}
+
+#left, #right {
+	float:left;
 }

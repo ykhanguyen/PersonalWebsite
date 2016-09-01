@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c80ef83-b73f-45d4-ae9e-7179b97b0283" name="webster.cs.washington.edu" url="http://webster.cs.washington.edu">
+        <fileTransfer host="webster.cs.washington.edu" port="22" rootFolder="/www/html/students/ykha" accessType="SFTP" username="ykha">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -20,9 +20,12 @@ a:visited {
 	color: #EE7C7C;
 }
 
+#intro strong, .title {
+	color: #7C84EE;
+}
+
 #intro strong {
 	text-decoration: underline;
-	color: #7C84EE;
 }
 
 .section:hover {
@@ -77,6 +80,7 @@ a {
 	margin-right: auto;
 	left:auto;
 	right:auto;
+
 }
 
 li {
@@ -84,4 +88,20 @@ li {
 }
 #hello {
 	font-style: italic;
+}
+
+nav {
+	opacity: 0.5;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	border: 1px solid;
+}
+
+.projects {
+	margin: 30px;
 }

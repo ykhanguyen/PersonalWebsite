@@ -6,6 +6,10 @@ $(document).ready(function() {
 
     var elem = $("#hello");
 
+    $("h1").animate({
+        fontSize: "70px"
+    });
+
     setInterval(function() {
         var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
         elem.css("color", newColor);
@@ -15,4 +19,5 @@ $(document).ready(function() {
             elem.css('visibility', 'hidden');
         }
     }, 500);
+
 });

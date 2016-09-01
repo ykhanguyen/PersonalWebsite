@@ -1,0 +1,19 @@
+<div class="container max">
+    <div class="middle">
+        <h1 id="hello">Projects</h1>
+        <ul>
+            {{!-- 2. The each helper can insert an array of data --}}
+            {{#each projects}}
+                <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 btn">
+                    <div class="projects">
+                        <h3 class="title">
+                            {{project}}
+                        </h3>
+                        <img src="images/{{image}}"  class="img-rounded" alt="Cinque Terre" width="350px" height="350px">
+
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

@@ -10,8 +10,6 @@ app.disable('x-powered-by');
 var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 
 
-
-
 app.engine('handlebars', handlebars.engine);
 
 
@@ -29,6 +27,31 @@ app.get('/about', function(req, res) {
    res.render('about', {menu: 'yeah'});
 });
 
+var data = {menu: 'yeah',
+    projects: [
+        {project: "Personal Webiste",
+            image: "PersonalWebsite.png",
+            github: "kylenguyen.xyz",
+            website: "https://github.com/ykhanguyen/PersonalWebsite",
+            description: ""},
+        {project: "US Citizen Test",
+            image: "USCitizenTest.png",
+            github: "http://students.washington.edu/ykha/uscitizentest/",
+            website: "",
+            description: ""},
+        {project: "Eng-Vi Dictionary",
+            image:"Eng-ViDictionary.png",
+            github: "",
+            website: "",
+            description: ""},
+        {project: "Escape the Cave",
+            image: "EscapeTheCave.png",
+            github: "https://github.com/ykhanguyen/EscapeTheCave",
+            description: ""},
+    ],};
+app.get('/projects', function(req, res) {
+    res.render('projects', data );
+});
 
 app.listen(app.get('port'), function(){
     console.log('Express started on http://localhost:' +

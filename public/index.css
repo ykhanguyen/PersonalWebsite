@@ -42,7 +42,7 @@ a:visited {
 }
 
 #about {
-	background-color: #FFEFEF;
+
 	padding-top: 10px;
 	color: #EC8EBA;
 }
@@ -53,7 +53,6 @@ a:visited {
 
 #about img {
 	vertical-align: top;
-	float:left;
 	margin-left: 20px;
 	margin-right: 50px;
 }
@@ -66,6 +65,11 @@ a {
 	text-decoration: none;
 }
 
-#left, #right {
-	float:left;
+nav {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -2.5em;
+	text-align: center;
+
 }

@@ -4,12 +4,35 @@
         <ul>
             {{!-- 2. The each helper can insert an array of data --}}
             {{#each projects}}
-                <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 btn">
-                    <div class="projects">
-                        <h3 class="title">
-                            {{project}}
-                        </h3>
-                        <img src="images/{{image}}"  class="img-rounded" alt="Cinque Terre" width="350px" height="350px">
+                <li class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="projects hovereffect">
+
+                        <img src="images/{{image}}"  class="img-rounded img-responsive" alt="Cinque Terre">
+                        <div class="overlay">
+                            <h2 class="title">{{project}}</h2>
+                            <p>
+                                {{#if description}}
+                                    <a href="#">
+                                        <abbr title="description"> <i class="glyphicon glyphicon-plus"></i></abbr>
+                                    </a>
+                                {{/if}}
+
+                                {{#if github}}
+                                    <a href="{{github}}">
+                                        <abbr title="github">
+                                            <i class="fa fa-github"></i>
+                                        </abbr>
+                                    </a>
+                                {{/if}}
+
+                                {{#if website}}
+                                    <a href="{{website}}">
+                                        <abbr title="website">
+                                            <i class="glyphicon glyphicon-globe"></i>
+                                        </abbr>
+                                    </a>
+                                {{/if}}
+                            </p>
 
                     </div>
                 </li>

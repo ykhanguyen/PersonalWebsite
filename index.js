@@ -9,7 +9,11 @@ app.disable('x-powered-by');
 
 var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 
+
+
+
 app.engine('handlebars', handlebars.engine);
+
 
 app.set('view engine', 'handlebars');
 
@@ -22,8 +26,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/about', function(req, res) {
-   res.render('about');
+   res.render('about', {menu: 'yeah'});
 });
+
 
 app.listen(app.get('port'), function(){
     console.log('Express started on http://localhost:' +

@@ -60,16 +60,28 @@ a:visited {
 .middle {
 	display: table-cell;
 	vertical-align: middle;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 a {
 	text-decoration: none;
 }
 
-nav {
+.page-header {
 	position: fixed;
-	right: 0;
-	top: 50%;
-	margin-top: -2.5em;
+	top: -40px;
+	z-index: 50;
 	text-align: center;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	left:auto;
+	right:auto;
+}
 
+li {
+	float: left;
+}
+#hello {
+	font-style: italic;
 }

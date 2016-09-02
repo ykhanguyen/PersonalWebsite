@@ -114,6 +114,10 @@ img {
 	cursor: default;
 }
 
+.overlay, .hovereffect {
+	border-radius: 25px;
+}
+
 .hovereffect .overlay {
 	width: 100%;
 	height: 100%;
@@ -121,11 +125,13 @@ img {
 	overflow: hidden;
 	top: 0;
 	left: 0;
+	border-radius: 25px;
 }
 
 .hovereffect img {
 	display: block;
 	position: relative;
+	border-radius: 25px;
 }
 
 .hovereffect h2 {
@@ -133,6 +139,7 @@ img {
 	color: #7C84EE;
 	text-align: center;
 	font-size: 17px;
+	border-radius: 25px;
 }
 
 .hovereffect:hover h2 {
@@ -140,6 +147,8 @@ img {
 	filter: alpha(opacity=0);
 	-webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
 	transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+	border-radius: 25px;
+
 }
 
 .hovereffect a.info {
@@ -152,6 +161,7 @@ img {
 	margin-top: 50px 0 0 0;
 	margin-bottom: 50px 0 0 0;
 	background-color: transparent;
+	border-radius: 25px;
 }
 
 .hovereffect a.info:hover {
@@ -173,6 +183,13 @@ img {
 	background-color: transparent;
 	margin: 0px;
 	padding: 0px;
+	border-radius: 25px;
+
+}
+
+.hovereffect h2 {
+	background-color: antiquewhite;
+	opacity: 0.8;
 }
 
 .hovereffect .overlay:before {
@@ -192,6 +209,8 @@ img {
 	-webkit-transform-origin: 50%;
 	-ms-transform-origin: 50%;
 	transform-origin: 50%;
+	border-radius: 25px;
+
 }
 
 .hovereffect p {
@@ -199,16 +218,20 @@ img {
 	text-transform: none;
 	font-size: 15px;
 	line-height: 2;
+	border-radius: 25px;
+
 }
 
 .hovereffect p a {
 	color: #7C84EE;
+	border-radius: 25px;
 }
 
 .hovereffect p a:hover,
 .hovereffect p a:focus {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
+	border-radius: 25px;
 }
 
 .hovereffect  a i {
@@ -217,26 +240,31 @@ img {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	padding: 0px 5px;
+	border-radius: 25px;
 }
 
 .hovereffect p a:first-child i {
 	-webkit-transform: translate3d(-60px,-60px,0);
 	transform: translate3d(-60px,-60px,0);
+	border-radius: 25px;
 }
 
 .hovereffect p a:nth-child(2) i {
 	-webkit-transform: translate3d(60px,-60px,0);
 	transform: translate3d(60px,-60px,0);
+	border-radius: 25px;
 }
 
 .hovereffect p a:nth-child(3) i {
 	-webkit-transform: translate3d(-60px,60px,0);
 	transform: translate3d(-60px,60px,0);
+	border-radius: 25px;
 }
 
 .hovereffect p a:nth-child(4) i {
 	-webkit-transform: translate3d(60px,60px,0);
 	transform: translate3d(60px,60px,0);
+	border-radius: 25px;
 }
 
 .hovereffect:hover .overlay:before {
@@ -245,6 +273,7 @@ img {
 	background-color: rgba(0,0,0,0.8);
 	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-135deg) scale3d(1,1,1);
 	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-135deg) scale3d(1,1,1);
+	border-radius: 25px;
 }
 
 .hovereffect:hover p i:empty {
@@ -252,6 +281,7 @@ img {
 	transform: translate3d(0,0,0);
 	opacity: 1;
 	filter: alpha(opacity=100);
+	border-radius: 25px;
 }
 
 

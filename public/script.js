@@ -54,6 +54,8 @@ $(document).ready(function() {
             context.moveTo(p.x, p.y);
             context.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
             context.fillStyle = "rgba(255,255,255," + p.d + ")";
+            //context.fillStyle = "rgba(" + (Math.random() * 255) + ","
+             //   + (Math.random() * 255) + "," + (Math.random() * 255) + "," + p.d + ")";
             context.fill();
         }
         moving();

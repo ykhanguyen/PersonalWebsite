@@ -1,5 +1,5 @@
 body {
-	background-color: #753C3C;
+	background-color: #461515;
 	font-size: 30px;
 	text-align: center;
 	vertical-align: middle;
@@ -35,7 +35,7 @@ a:visited {
 	width: 90%;
 	height: 100%;
 	margin-top: -3rem;
-	margin-left: 3%;
+	margin-left: 5%;
 	overflow: hidden;
 	z-index: 10;
 	text-align: center;
@@ -255,6 +255,13 @@ img {
 }
 
 
-#intro strong, .title {
+#intro strong {
 	color: #7C84EE;
+}
+
+canvas {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:-1;
 }

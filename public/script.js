@@ -36,7 +36,7 @@ $(document).ready(function() {
         particles.push({
             x : Math.random() * width,
             y : Math.random() * height,
-            r : Math.random() * 3+1,
+            r : Math.random() * 4,
             d : Math.random(),
             dx: Math.random() * (Math.random() < 0.5 ? -1 : 1),
             dy: Math.random() * (Math.random() < 0.5 ? -1 : 1),
@@ -72,13 +72,14 @@ $(document).ready(function() {
 
             if (p.d < 0) {
                 p.blinking = -0.01;
-            } else if (p.d > 1) {
+            } else if (p.d >= 1) {
                 p.blinking = 0.01;
             }
 
             // send flakes back to the top when it exits screen
             if (p.x > width + 10 || p.x < -10 || p.y > height || p.y < -10) {
-                particles[i] = {x:Math.random() * width, y:-10, r : p.r, d : p.d};
+                p.x = Math.random()*width;
+                p.y = Math.random() * height;
             }
         }
     }

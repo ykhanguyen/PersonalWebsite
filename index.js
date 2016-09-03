@@ -29,9 +29,14 @@ app.get('/about', function(req, res) {
 
 var data = {menu: 'yeah',
     projects: [
+        {project: "Money Rain Multiplayer",
+            image: "MoneyRain.png",
+            website: "https://money-rain-application.herokuapp.com/",
+            github: "https://github.com/ykhanguyen/MoneyRain",
+            description: ""},
         {project: "Personal Webiste",
             image: "PersonalWebsite.png",
-            website: "http://www.kylenguyen.xyz",
+            website: "/",
             github: "https://github.com/ykhanguyen/PersonalWebsite",
             description: ""},
         {project: "US Citizen Quiz",

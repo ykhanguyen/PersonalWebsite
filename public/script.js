@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("h1").animate({
         fontSize: "90px"
     });
-    
+
     setInterval(function() {
         var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
         elem.css("color", newColor);
@@ -20,6 +20,9 @@ $(document).ready(function() {
         }
     }, 500);
 
+    $("#more-background").click(function() {
+        $("#bg").fadeToggle();
+    });
     var canvas = $("#canvas")[0];
 
     // copy right https://codepen.io/ruigewaard/pen/JHDdF/

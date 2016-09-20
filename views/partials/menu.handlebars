@@ -1,9 +1,17 @@
 <div class="page-header" >
     <nav class="navbar navbar-default" style="display:none">
             <ul class="nav navbar-nav">
-                <li ><a href="/">Home </a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
+                {{#if about}}
+                    <li ><a  class="header" href="/">Home </a></li>
+                    <li><a style="font-weight: bold;" class="header" href="/about">About</a></li>
+                    <li><a class="header" href="/projects">Projects</a></li>
+                {{/if}}
+
+                {{#if projects}}
+                    <li ><a  class="header" href="/">Home </a></li>
+                    <li><a  class="header" href="/about">About</a></li>
+                    <li><a style="font-weight: bold;" class="header" href="/projects">Projects</a></li>
+                {{/if}}
             </ul>
     </nav>
 </div>

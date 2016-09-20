@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("h1").animate({
         fontSize: "90px"
     });
-
+    
     setInterval(function() {
         var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
         elem.css("color", newColor);

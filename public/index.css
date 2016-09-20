@@ -1,11 +1,10 @@
 body {
-	background-color: black;
 	font-size: 30px;
 	text-align: center;
 	vertical-align: middle;
 	font-family: "utm_duepuntozeroregular";
 
-	color: white;
+	color: #cccccc;
 }
 
 @font-face {
@@ -31,9 +30,12 @@ h1 {
 	text-align: center;
 	font-size: 50px;
 }
-
+h2 {
+	font-family: "utm_zebrawoodregular";
+	font-size: 50px;
+}
 a:visited {
-	color: white;
+	color: silver;
 }
 
 #intro {
@@ -64,7 +66,6 @@ a:visited {
 #about {
 
 	padding-top: 10px;
-	color: #EC8EBA;
 }
 
 #about ul, #about p {
@@ -93,7 +94,7 @@ a {
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
-	left:auto;
+	left:70px;
 	right:auto;
 
 }
@@ -321,3 +322,4 @@ canvas {
 	top:0;
 	z-index: -2;
 }
+

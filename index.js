@@ -20,11 +20,11 @@ app.set('port', process.env.PORT || 3333);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-    res.render('home', {bg: 'yeah'});
+    res.render('home', {bg: 'yeah', home: 'yeah'});
 });
 
 app.get('/about', function(req, res) {
-   res.render('about', {menu: 'yeah'});
+   res.render('about', {menu: 'yeah', about: 'yeah'});
 });
 
 var data = {menu: 'yeah',
@@ -53,7 +53,8 @@ var data = {menu: 'yeah',
             image: "EscapeTheCave.png",
             github: "https://github.com/ykhanguyen/EscapeTheCave",
             description: ""},
-    ],};
+    ],}
+    pj: "yeah";
 app.get('/projects', function(req, res) {
     res.render('projects', data );
 });

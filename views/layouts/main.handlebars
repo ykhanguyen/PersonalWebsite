@@ -4,7 +4,11 @@
     {{>head}}
 </head>
 <body>
+{{#if bg}}
+    <img id = "background" src="images/seattle_2.jpg" width="100%" height="100%" />
+{{/if}}
 <canvas id="canvas" width="100%" height="100%">
+
 </canvas>
     {{#if menu}}
         {{>menu}}

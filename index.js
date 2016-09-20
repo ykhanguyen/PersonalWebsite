@@ -20,7 +20,7 @@ app.set('port', process.env.PORT || 3333);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-    res.render('home');
+    res.render('home', {bg: 'yeah'});
 });
 
 app.get('/about', function(req, res) {

@@ -1,15 +1,35 @@
 body {
-	background-color: #461515;
+	background-color: black;
 	font-size: 30px;
 	text-align: center;
 	vertical-align: middle;
-	font-family: Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+	font-family: "utm_duepuntozeroregular";
+
+	color: white;
+}
+
+@font-face {
+	font-family: 'utm_duepuntozeroregular';
+	src: url('Fonts/utm_duepuntozero-webfont.woff2') format('woff2'),
+	url('Fonts/utm_duepuntozero-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'utm_zebrawoodregular';
+	src: url('Fonts/utm_zebrawood-webfont.woff2') format('woff2'),
+	url('Fonts/utm_zebrawood-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
 }
 
 h1 {
+	font-family: "utm_zebrawoodregular";
 	text-align: center;
 	font-size: 50px;
-	color: #CD5555;
 }
 
 a:visited {
@@ -17,7 +37,6 @@ a:visited {
 }
 
 #intro {
-	color: #EE7C7C;
 }
 
 
@@ -294,4 +313,11 @@ canvas {
 	left:0;
 	top:0;
 	z-index:-1;
+}
+
+#background {
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: -2;
 }

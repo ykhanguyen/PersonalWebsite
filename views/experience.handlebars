@@ -1,0 +1,19 @@
+<div class="container max col-xs-12 col-md-12 col-lg-12">
+    <div class="container">
+        <div class="row">
+            {{#each jobs}}
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 each-job">
+                    <h3>{{title}}</h3>
+                    <h4>&#09;{{date}} </h4>
+                    <p class="description">
+                        <ul>
+                            {{#each description}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </p>
+                </div>
+            {{/each}}
+            </div>
+    </div>
+</div>

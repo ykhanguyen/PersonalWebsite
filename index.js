@@ -57,6 +57,7 @@ var data = {menu: 'yeah',
         {project: "Eng-Vi Dictionary",
             image:"Eng-ViDictionary.png",
             date: "June 2016 - Time Spent: ~13 hours",
+            skills: "jQuery, Ajax",
             github: "https://github.com/uyvunk/Chrome-Extension---Translator",
             website: "https://chrome.google.com/webstore/detail/eng-vi-dictionary/nidobgjfikdhjkmdbpppjokehnnfcefb",
             description: "This is the Google Chrome extension that translate a word in English by a double click." +
@@ -64,6 +65,7 @@ var data = {menu: 'yeah',
             team: "Kyle Nguyen, Vu Nguyen, Khanh Tran"},
         {project: "Escape the Cave",
             image: "EscapeTheCave.png",
+            skills: "SFML, C++",
             date: "April 2015 - Time Spent: ~10 hours",
             github: "https://github.com/ykhanguyen/EscapeTheCave",
             description: "This game's mission is that in the dark case where the dark is cover half of the screen. " +
@@ -73,6 +75,77 @@ var data = {menu: 'yeah',
     pj: "yeah";
 app.get('/projects', function(req, res) {
     res.render('projects', data );
+});
+
+var experience_data = {
+    menu: 'yeah',
+    experience: 'yeah',
+    jobs: [
+        {
+          title: 'Project Practicum, Dr. Anat Caspi, University of Washington',
+            date: 'April 2016 – July 2016',
+            description: ['Created a plugin for the OSREAD (Open Source Reading Education Assessment & Diagnosis) in Grails ' +
+            'where researchers can assign assessment of voice and images for their patients as ' +
+            'a JSON file and view the progress as a .CSV file.',
+            'Created the server to input images and audios in Php.',
+            'Trained Prosody with new words and aligned Children’s data through TextGrid files.']
+        },
+        {
+            title: 'Undergraduate Researcher, Human Centered Robotic Lab, University of Washington',
+            date: 'April 2016 – June 2016',
+            description: ['Learn about ROS - Robot Operating System.',
+                'Project Spring 2016: ' +
+                'Create a node that subscribes to an image topic of the PR2 robot ' +
+                'and publishes a black and white version of that image.']
+        },
+        {
+          title: 'Computer Science Tutor, Tutoring Center, Highline College',
+            date: 'January 2015 – August 2015 ',
+            description: ['Tutored students for Java assignments.',
+            'Answered questions about class lectures for approximate 60 students in Computer Programming I/II ' +
+            '(CSCI 142/ CSCI143) classes.']
+        },
+        {
+          title: 'Application Tester, Lionbridge Technologies Inc, Microsoft',
+            date: 'March 2015 - May 2015',
+            description: ['Tested mobile applications submitted to the Window Store.']
+        },
+        {
+            title: 'Math Tutor, Math Resource Center, Highline College',
+            date: 'September 2014 – February 2015',
+            description: ['Tutored students for all Calculus class.', 'Made a calculator work shop to introduce ' +
+            'how to use the calculator. (02/2015)', 'Class visits to introduce ' +
+            'about Math Resource Center to colleagues.']
+        },
+        {
+          title:'Teaching Assistant, Internship, Prof. Josh Archer, Computer Programming II (CSCI 143), Highline College',
+            date: 'September 2014 – Dec 2014',
+            description: ['Graded homework for over 30 students', 'Held office hours every week to tutor students.']
+        },
+        {
+          title: 'Assistant, Volunteer, Tech "Acodemy" Summer Camp, Highline College',
+            date: 'August 2014',
+            description: ['Helped ~30 high school students become acquainted with codes in Arduino, Java and Web Development.',
+            'Solved non-compile codes.',
+            'Answered questions in class.',
+            ]
+        },
+        {
+            title: 'Office Assistant, Campus Safety Office, Highline College',
+            date: 'March 2014- June 2014',
+            description: ['Rearranged parking tickets.',
+                'Used software to store parking permits and parking tickets.',
+                'Answered calls to Highline College’s campus safety.']
+        },
+        {
+            title: 'Cable Assembler, Carlisle Interconnect Technologies',
+            date: 'May-2013 – March 2014',
+            description: ["Cable lacing.", "Built connectors for airplane's cable (strip/crimp/label)"]
+        }
+    ]
+};
+app.get('/experience', function(req, res) {
+    res.render('experience', experience_data);
 });
 
 app.listen(app.get('port'), function(){

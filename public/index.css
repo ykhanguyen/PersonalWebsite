@@ -6,8 +6,9 @@ body {
 
 	color: #cccccc;
 }
-li {
+.header {
 	font-family: "utm_zebrawoodregular";
+	font-size: 30px;
 }
 
 @font-face {
@@ -104,7 +105,7 @@ a {
 
 }
 
-li {
+.header {
 	float: left;
 }
 #hello {
@@ -115,7 +116,7 @@ nav {
 	opacity: 0.5;
 }
 
-ul {
+.header {
 	list-style-type: none;
 }
 
@@ -186,8 +187,8 @@ img {
 	text-transform: uppercase;
 	color: #7C84EE;
 	border: 1px solid #7C84EE;
-	margin-top: 50px 0 0 0;
-	margin-bottom: 50px 0 0 0;
+	margin-top: 0px 0 0 0;
+	margin-bottom: 0px 0 0 0;
 	background-color: transparent;
 	border-radius: 25px;
 }
@@ -367,9 +368,21 @@ button {
 }
 
 .each-project {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	border-radius: 25px;
 	color: #333333;
+}
+
+.each-job {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 25px;
+	margin-left: 50px;
+	color: #333333;
+	width: 100%;
+	text-align: left;
+	background-color: white;
 }
 
 
@@ -378,11 +391,15 @@ h3 {
 	font-weight: bold;
 }
 
-.each-project:hover {
+.each-project:hover, .each-job:hover {
 	background-color: #FCFAFA;
 	font-style: italic;
 }
 
-.description {
+.description , li{
 	font-size: 20px;
+}
+
+ul {
+	list-style-type: square;
 }

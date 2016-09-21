@@ -15,11 +15,14 @@ $(document).ready(function() {
         $(this).css("color", "cadetblue");
         $(".background-about").hide();
         $("#education").hide();
+        $(".achievement").hide();
         $("#bg").hide();
         if ($(this).attr('id') == "background-button") {
             $(".background-about").fadeIn();
         } else if ($(this).attr('id') == "education-button") {
             $("#education").fadeIn();
+        } else {
+            $(".achievement").fadeIn();
         }
     });
 

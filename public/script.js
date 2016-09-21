@@ -10,6 +10,19 @@ $(document).ready(function() {
         fontSize: "90px"
     });
 
+    $(".about-button").click(function() {
+       $(".about-button").css("color", "black");
+        $(this).css("color", "cadetblue");
+        $(".background-about").hide();
+        $("#education").hide();
+        $("#bg").hide();
+        if ($(this).attr('id') == "background-button") {
+            $(".background-about").fadeIn();
+        } else if ($(this).attr('id') == "education-button") {
+            $("#education").fadeIn();
+        }
+    });
+
     setInterval(function() {
         var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
         elem.css("color", newColor);

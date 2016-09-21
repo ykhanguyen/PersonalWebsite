@@ -93,8 +93,8 @@ var experience_data = {
         {
             title: 'Undergraduate Researcher, Human Centered Robotic Lab, University of Washington',
             date: 'April 2016 – June 2016',
-            description: ['Learn about ROS - Robot Operating System.',
-                'Project Spring 2016: ' +
+            description: ['Learned about ROS - Robot Operating System.',
+                'Project of Spring 2016: ' +
                 'Create a node that subscribes to an image topic of the PR2 robot ' +
                 'and publishes a black and white version of that image.']
         },

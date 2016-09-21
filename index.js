@@ -113,7 +113,7 @@ var experience_data = {
         {
             title: 'Math Tutor, Math Resource Center, Highline College',
             date: 'September 2014 – February 2015',
-            description: ['Tutored students for all Calculus class.', 'Made a calculator work shop to introduce ' +
+            description: ['Tutored students for all Calculus classes.', 'Made a calculator work shop to introduce ' +
             'how to use the calculator. (02/2015)', 'Class visits to introduce ' +
             'about Math Resource Center to colleagues.']
         },

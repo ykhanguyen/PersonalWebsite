@@ -393,7 +393,7 @@ h3 {
 
 .each-project:hover, .each-job:hover {
 	background-color: #FCFAFA;
-	font-style: italic;
+	font-weight: bold;
 }
 
 .description , li{

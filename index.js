@@ -29,12 +29,21 @@ app.get('/about', function(req, res) {
 
 var data = {menu: 'yeah',
     projects: [
+        {project: "TodoList and Time Track",
+            image: "TodoListAndTimeTrack.png",
+            website: "https://youtu.be/Sbi5Yw_ZkcQ",
+            github: "https://github.com/ykhanguyen/TodoListAndTimeTrack",
+            date: "September 2016 - Time spent: ~20 hours",
+            skills: "jQuery, JS, Html, CSS",
+            description: "This is Google Chrome Extension's Todo list app. It keeps track of the time of each task.",
+            team: "Kyle Nguyen"
+        },
         {project: "Money Rain Multiplayer",
             image: "MoneyRain.png",
             website: "https://money-rain-application.herokuapp.com/",
             github: "https://github.com/ykhanguyen/MoneyRain",
             date: "September 2016 - Time Spent: ~7 hours",
-            skills: "Node.js Express, Socket.io, jQueryCSS, Html, CSS",
+            skills: "Node.js Express, Socket.io, jQuery, Html, CSS",
             description: "This game's goal is to strengthen players' memorization and reaction.",
             team: "Kyle Nguyen"},
         {project: "Personal Webiste",

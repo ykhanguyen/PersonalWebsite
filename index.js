@@ -15,7 +15,7 @@ app.engine('handlebars', handlebars.engine);
 
 app.set('view engine', 'handlebars');
 
-app.set('port', process.env.PORT || 3333);
+app.set('port', process.env.PORT || 5556);
 
 app.use(express.static(__dirname + '/public'));
 
@@ -29,6 +29,15 @@ app.get('/about', function(req, res) {
 
 var data = {menu: 'yeah',
     projects: [
+        {project: "Moody Up",
+            image: "moodyup.png",
+            website: "https://devpost.com/software/moody-up",
+            github: "https://github.com/ykhanguyen/Moody-Up",
+            date: "October 2016 - Time spent: ~12 hours",
+            skills: "Node.js",
+            description: "The app to cheer users up by analyzing all your Facebook's posts and pictures.",
+            team: "Kyle Nguyen, Minh Hoang"
+        },
         {project: "TodoList and Time Track",
             image: "TodoListAndTimeTrack.png",
             website: "https://youtu.be/Sbi5Yw_ZkcQ",

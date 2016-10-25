@@ -35,7 +35,7 @@ var data = {menu: 'yeah',
             github: "https://github.com/ykhanguyen/Moody-Up",
             date: "October 2016 - Time spent: ~12 hours",
             skills: "Node.js",
-            description: "The app to cheer users up by analyzing all your Facebook's posts and pictures.",
+            description: "The app's mission is to cheer users up by analyzing all your Facebook's posts and pictures.",
             team: "Kyle Nguyen, Minh Hoang"
         },
         {project: "TodoList and Time Track",

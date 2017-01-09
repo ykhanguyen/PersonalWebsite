@@ -100,7 +100,7 @@ var experience_data = {
     experience: 'yeah',
     jobs: [
         {
-          title: 'Project Practicum, Dr. Anat Caspi, University of Washington',
+          title: 'Undergraduate Researcher, Dr. Anat Caspi, University of Washington',
             date: 'April 2016 – July 2016',
             description: ['Created a plugin for the OSREAD (Open Source Reading Education Assessment & Diagnosis) in Grails ' +
             'where researchers can assign assessment of voice and images for their patients as ' +
